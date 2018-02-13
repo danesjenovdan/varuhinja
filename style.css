@@ -1,0 +1,261 @@
+html, body {
+  background-color: #f0efef;
+}
+
+body, h1, h2, h3 {
+  font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+}
+
+.header {
+  background-color: #dd786b;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 200;
+	padding: 64px 0;
+  margin: 0;
+	line-height: 48px;
+}
+
+.header h1 .title {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+	font-size: 48px;
+}
+
+.footer {
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  line-height: 48px;
+  z-index: 99;
+}
+
+.footer .logo {
+  font-family: Changa, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .logo a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: #704a45;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dd786b;
+  text-decoration: underline;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 0px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 35px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  color: #333;
+}
+
+.card p.signatures {
+  font-size: 14px;
+}
+
+.signatures.show-less {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.signatures.show-less::after {
+  content: ' ';
+  display: table;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
+  background-image: -webkit-linear-gradient(top, transparent, #fff);
+  background-image: -moz-linear-gradient(top, transparent, #fff);
+  background-image: linear-gradient(to bottom, transparent, #fff);
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card-white {
+  background-color: #ffffff;
+}
+
+.btn.btn-djnd,
+.btn.btn-djnd:hover,
+.btn.btn-djnd:active,
+.btn.btn-djnd:focus {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+  border-radius: 0px;
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: #dd786b;
+  border: 0;
+}
+
+.btn.btn-djnd:hover {
+  color: #000;
+}
+
+.btn.btn-social {
+  width: 48px;
+  height: 48px;
+  padding: 10px !important;
+}
+
+.btn.btn-social svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+.btn.btn-social:hover svg {
+  fill: #000;
+}
+
+.icon-info {
+  display: inline-block;
+  border: 4px solid #dd786b;
+  margin-right: 10px;
+  width: 68px;
+  height: 68px;
+}
+
+.icon-circle {
+  border-radius: 50%;
+}
+
+.info-container {
+  text-align: center;
+}
+
+.info-container > * {
+  vertical-align: middle;
+}
+
+.cardtitle {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.cardtitle h3 {
+    font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: #dd786b transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.triangle-top {
+    bottom: -35px;
+    z-index: 4;
+}
+
+.triangle-bottom {
+    border-color: #f0efef transparent transparent transparent;
+    bottom: -55px;
+    z-index: 3;
+}
+
+.row.social div {
+    text-align: center;
+    margin-top: 15px;
+}
+span.social {
+    height: 60px;
+    width: 60px;
+    background-color: #6ba8a0;
+    font-size: 32px;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* reset input glow */
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus
+{
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  border-color: #dd786b !important;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none !important;
+  -webkit-appearance:none;
+}
+
+input.form-control {
+  margin-bottom: 10px;
+  border-radius: 0px;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  border: 2px solid #dad7d7;
+  height: 44px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+input.shorturl {
+  text-align: center;
+}
+
+#hvala-podpis {
+  display: none;
+}
