@@ -44,7 +44,7 @@ $(function ready() {
 
   $.ajax({
     method: 'POST',
-    url: 'http://www.djnd.si/yomamasofat/',
+    url: 'https://djnd.si/yomamasofat/',
     data: {
       fatmama: document.location.href,
     },
