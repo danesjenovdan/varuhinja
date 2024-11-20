@@ -61,25 +61,25 @@ $(function ready() {
   $('.js-facebook').on('click', function () {
     var url = 'https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=' + encodeURIComponent(document.location.href) + '&link=' + encodeURIComponent(document.location.href) + '&ref=responsive&name=' + encodeURIComponent(title);
     window.open(url, '_blank');
-    ga('send', 'event', 'social', 'facebook');
+    // ga('send', 'event', 'social', 'facebook');
     return false;
   });
   $('.js-twitter').on('click', function () {
     var url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text + ' ' + hashtags + ' ' + link);
     window.open(url, '_blank');
-    ga('send', 'event', 'social', 'twitter');
+    // ga('send', 'event', 'social', 'twitter');
     return false;
   });
   $('.js-gplus').on('click', function () {
     var url = 'https://plus.google.com/share?url=' + encodeURIComponent(document.location.href);
     window.open(url, '_blank');
-    ga('send', 'event', 'social', 'gplus');
+    // ga('send', 'event', 'social', 'gplus');
     return false;
   });
   $('.js-email').on('click', function () {
     var url = 'mailto:?subject=' + encodeURIComponent(title) + '&body=' + text + ' ' + encodeURIComponent(link);
     window.open(url, '_blank');
-    ga('send', 'event', 'social', 'email');
+    // ga('send', 'event', 'social', 'email');
     return false;
   });
 });
