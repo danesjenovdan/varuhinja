@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: varuhinja
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - varuhinja.djnd.si
+        - varuhinja.danesjenovdan.si
+      secretName: varuhinja-tls
+  rules:
+    - host: varuhinja.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: varuhinja
+                port:
+                  number: 80
+    - host: varuhinja.danesjenovdan.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: varuhinja
+                port:
+                  number: 80

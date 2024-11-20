@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: varuhinja
+  labels:
+    app: varuhinja
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: varuhinja
+  template:
+    metadata:
+      labels:
+        app: varuhinja
+    spec:
+      containers:
+        - name: varuhinja
+          image: varuhinja
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 50Mi
+              cpu: 50m
+            limits:
+              memory: 50Mi
+              cpu: 50m
