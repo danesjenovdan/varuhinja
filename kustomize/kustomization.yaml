@@ -8,4 +8,4 @@ resources:
 images:
   - name: varuhinja
     newName: rg.fr-par.scw.cloud/djnd/varuhinja
-    newTag: 'latest'
+    newTag: 'ccab7695570a4e7f10c1b17424ddade448a61ff5'
